@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntgelse</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <img src="ntgelse-logo.png" alt="ntgelse Logo" class="logo">
+        <h1>ntgelse</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate photographer with a keen eye for capturing the beauty of the world in a simple and elegant way. With years of experience in various photography styles, I strive to create stunning visuals that tell a story. Follow me on Instagram: <a href="https://www.instagram.com/ntgelse.__" target="_blank">@ntgelse.__</a></p>
+        <p>Contact ID: 7619248486</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div id="photo-gallery">
+            <!-- Pre-uploaded photos -->
+            <div class="photo-container">
+                <img src="photos/photo1.jpg" alt="Photo 1" class="photo">
+                <button class="remove-photo" onclick="removePhoto(this)">×</button>
+            </div>
+            <div class="photo-container">
+                <img src="photos/photo2.jpg" alt="Photo 2" class="photo">
+                <button class="remove-photo" onclick="removePhoto(this)">×</button>
+            </div>
+            <div class="photo-container">
+                <img src="photos/photo3.jpg" alt="Photo 3" class="photo">
+                <button class="remove-photo" onclick="removePhoto(this)">×</button>
+            </div>
+            <!-- Add more photos as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ntgelse</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
